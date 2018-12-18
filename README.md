@@ -1,6 +1,6 @@
-# {{ name }}
+# vue-canvas-gauge
 
-> {{ description }}
+> 仪表盘
 
 ## Build Setup
 
