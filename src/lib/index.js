@@ -1,12 +1,11 @@
-import vueCanvasGauge from './vue-canvas-gauge.vue'
+import VueCanvasGauge from './vue-canvas-gauge.vue'
 
-const canvasGauge = {
-  install(Vue, options) {
-    Vue.component(vueCanvasGauge.name, vueCanvasGauge)
-  }
+VueCanvasGauge.install = function(Vue) {
+  Vue.component('VueCanvasGauge', VueCanvasGauge)
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(canvasGauge)
+  window.Vue.use(VueCanvasGauge)
 }
-export default canvasGauge
+
+export default VueCanvasGauge

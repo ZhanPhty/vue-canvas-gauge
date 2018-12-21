@@ -1,24 +1,32 @@
 <template>
   <div id="app">
     <div class="clock-board">
-      <vue-canvas-gauge :current="current"></vue-canvas-gauge>
+      <vue-canvas-gauge :current="current" :width="width"></vue-canvas-gauge>
     </div>
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
+import VueCanvasGauge from './lib/index.js'
+
+Vue.use(VueCanvasGauge)
 
 export default {
   name: 'app',
+  components: {
+    VueCanvasGauge
+  },
   data() {
     return {
-      current: 664
+      current: 664,
+      width: 200
     }
   }
 }
 </script>
 
-<style lang="scss">
+<style>
 html, body {
   padding: 0;
   margin: 0;
@@ -26,8 +34,6 @@ html, body {
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #333;
 }
@@ -40,6 +46,4 @@ html, body {
   padding-top: 20px;
   background: linear-gradient(#0e83f5, #20bcf5);
 }
-
-
 </style>
