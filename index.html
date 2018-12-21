@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>vue-canvas-gauge</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script src="/dist/vue-canvas-gauge.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>vue-canvas-gauge</title>
+</head>
+
+<body>
+  <div id="app">
+    <vue-canvas-gauge :current="current"></vue-canvas-gauge>
+  </div>
+  <script src="./node_modules/vue/dist/vue.js"></script>
+  <script src="./dist/vue-canvas-gauge.js"></script>
+   <!-- <script src="/dist/vue-canvas-gauge.js"></script> -->
+</body>
+<script>
+  new Vue({
+    el: '#app',
+    data() {
+      return {
+        current: 664
+      }
+    }
+  })
+</script>
+
 </html>

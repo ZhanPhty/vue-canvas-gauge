@@ -1,6 +1,6 @@
 # vue-canvas-gauge
 
-> 仪表盘
+> vue信用分仪表盘
 
 ## Build Setup
 

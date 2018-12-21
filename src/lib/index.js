@@ -1,12 +1,12 @@
 import vueCanvasGauge from './vue-canvas-gauge.vue'
 
-const comment = {
-  install: function(Vue) {
+const canvasGauge = {
+  install(Vue, options) {
     Vue.component(vueCanvasGauge.name, vueCanvasGauge)
   }
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(comment)
+  window.Vue.use(canvasGauge)
 }
-export default comment
+export default canvasGauge
