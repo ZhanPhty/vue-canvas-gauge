@@ -1,3 +1,5 @@
+![截图](https://github.com/ZhanPhty/vue-canvas-gauge/blob/master/screenshot.png)
+
 # vue-canvas-gauge
 
 > vue信用分仪表盘, 仿支付宝芝麻信用分效果
