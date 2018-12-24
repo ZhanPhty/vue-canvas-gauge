@@ -1,7 +1,7 @@
 {
   "name": "vue-canvas-gauge",
   "description": "vue信用分仪表盘",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "zhanphty <461632311@qq.com>",
   "private": false,
   "license": "MIT",

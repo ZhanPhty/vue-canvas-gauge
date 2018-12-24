@@ -4,6 +4,10 @@
 
 > vue信用分仪表盘, 仿支付宝芝麻信用分效果
 
+## git
+
+github: [https://github.com/ZhanPhty/vue-canvas-gauge](https://github.com/ZhanPhty/vue-canvas-gauge)
+
 ## 安装与基本用法
 
 ```
@@ -149,4 +153,5 @@ export default {
 ## 联系
 
 QQ：461632311
+
 网址：[http//www.uizph.com](http//www.uizph.com)
